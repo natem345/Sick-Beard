@@ -1560,7 +1560,7 @@ class NewHomeAddShows:
         def finishAddShow(): 
             # if there are no extra shows then go home
             if not other_shows:
-                redirect('/home')
+                redirect('http://localhost:8081/home/addShows/newShow')
             
             # peel off the next one
             next_show_dir = other_shows[0]
