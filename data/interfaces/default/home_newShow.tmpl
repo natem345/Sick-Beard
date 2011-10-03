@@ -11,18 +11,6 @@
 
 #include $os.path.join($sickbeard.PROG_DIR, "data/interfaces/default/inc_top.tmpl")
 
-
-
-    <button id="btnExistingShow" class="ui-button">
-        <div class="button"><img src="$sbRoot/images/add-existing32.png" alt="Add Existing Shows"/></div>
-        <div class="buttontext">
-            <h2>Add Existing Shows</h2>
-            <p>Use this option to add shows that already have a folder created on your hard drive. Sick Beard will scan your existing metadata/episodes and add the show accordingly.</p>
-        </div>
-    </button>
-
-
-
 <link rel="stylesheet" type="text/css" href="$sbRoot/css/formwizard.css" />
 <script type="text/javascript" src="$sbRoot/js/formwizard.js"></script>
 <script type="text/javascript" src="$sbRoot/js/qualityChooser.js"></script>
@@ -97,21 +85,3 @@
 <script type="text/javascript" src="$sbRoot/js/rootDirs.js"></script>
 
 #include $os.path.join($sickbeard.PROG_DIR, "data/interfaces/default/inc_bottom.tmpl")
-
-
-<script type="text/javascript" charset="utf-8">
-<!--
-\$(document).ready(function(){  
-
-    \$('#btnNewShow').click(function() {
-      window.location = '$sbRoot/home/addShows/newShow';
-    });
-    \$('#btnExistingShow').click(function() {
-      window.location = '$sbRoot/home/addShows/existingShows';
-    });
-
-});
-//-->
-</script>
-
-
