@@ -792,7 +792,7 @@ class Home:
         print "\n\n---------------------------\n"
         import unicodedata
         def conv(str): return unicodedata.normalize('NFKD', str).encode('ascii','ignore')
-        print "Name, Season, Description, Airdate"
+        print "Name, Season, Description"
         for r in sqlResults:
             print "{}, {}, \"{}\"".format(conv(r["name"]), r["season"], conv(r["description"][0:50]))
         

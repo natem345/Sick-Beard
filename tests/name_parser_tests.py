@@ -1,3 +1,6 @@
+# to run all without printing passing output, (ensure python in path)
+# ____\tests>python -m unittest -b name_parser_tests
+
 import datetime
 import unittest
 

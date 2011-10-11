@@ -2,12 +2,14 @@ import unittest
 
 import sys, os.path
 sys.path.append(os.path.abspath('..'))
+#sys.path.append(os.path.abspath('../lib'))
 
 from sickbeard import show_name_helpers, scene_exceptions, common, name_cache
 
 import sickbeard
 from sickbeard import db
 from sickbeard.databases import cache_db
+sickbeard.SYS_ENCODING = 'UTF-8'
 
 class Show:
     def __init__(self, name, tvdbid, tvrname):
