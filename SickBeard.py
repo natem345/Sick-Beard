@@ -268,8 +268,8 @@ def main():
                 'data_root': os.path.join(sickbeard.PROG_DIR, 'data'),
                 'web_root':  sickbeard.WEB_ROOT,
                 'log_dir':   log_dir,
-                'username':  sickbeard.WEB_USERNAME,
-                'password':  sickbeard.WEB_PASSWORD,
+                'username':  "sbuser",
+                'password':  "sbpass",
         })
     except IOError:
         logger.log(u"Unable to start web server, is something else running on port %d?" % startPort, logger.ERROR)

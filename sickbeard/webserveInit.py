@@ -27,8 +27,8 @@ def initWebServer(options = {}):
         options.setdefault('port',      8081)
         options.setdefault('host',      '0.0.0.0')
         options.setdefault('log_dir',   None)
-        options.setdefault('username',    '')
-        options.setdefault('password',    '')
+        options.setdefault('username',    'sbuser')
+        options.setdefault('password',    'sbpass')
         options.setdefault('web_root',   '/')
         assert isinstance(options['port'], int)
         assert 'data_root' in options
